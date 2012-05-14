@@ -108,7 +108,7 @@ unless ENV["S3_BUCKET"].blank?
 
         Dummy.delete_all
         @dummy = Dummy.new
-        @dummy.avatar = File.new(File.join(File.dirname(__FILE__), '..', 'fixtures', 'question?mark.png'), 'rb')
+        @dummy.avatar = File.new(File.join(File.dirname(__FILE__), '..', 'fixtures', 'question-mark.png'), 'rb')
         @dummy.save
       end
 
